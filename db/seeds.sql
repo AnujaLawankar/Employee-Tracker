@@ -1,3 +1,4 @@
+
 INSERT INTO department(dep_name)
 VALUES ('Computer Department'),
        ('Electronic Department'),
@@ -12,18 +13,10 @@ VALUES ( "Web Devloper", 5000.00, 3 ),
         ( "Software tester", 1000.00, 1),
              ( "Motor Engineer", 3000.00, 5);
 
-
-INSERT INTO manager( manager_name)
-VALUES ( "Nikhil"),
-( "Amol"),
-( "Shobha"),
-("Krushanrao"),
-( "Renu");
-
-INSERT INTO employee( first_name, last_name,  role_id, manager_id)
-VALUES ( "Anuja", "Lawankar",2, 4),
-           ("Agniv", "Shinde", 5, 3),
-            ( "Janvi", "Lawankar", 4, 2),
-         ( "Yash",  "shinde", 3, 5),
-         ( "Saransh", "Lawankar", 1, 2);
+INSERT INTO employee( first_name, last_name,  role_id)
+VALUES ( "Anuja", "Lawankar",2),
+           ("Agniv", "Shinde", 5),
+            ( "Janvi", "Lawankar", 4),
+         ( "Yash",  "shinde", 3),
+         ( "Saransh", "Lawankar", 1);
 

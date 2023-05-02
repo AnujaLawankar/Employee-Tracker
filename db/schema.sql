@@ -22,10 +22,6 @@ PRIMARY KEY (id),
   ON DELETE SET NULL);
 
 
-  CREATE TABLE manager(
-    id INT AUTO_INCREMENT,
-    manager_name VARCHAR(30),
-    PRIMARY KEY (id));
 
 CREATE TABLE  employee( 
 id INT NOT NULL AUTO_INCREMENT, 
@@ -39,5 +35,5 @@ FOREIGN KEY (role_id)
   ON DELETE SET NULL,
   
   FOREIGN KEY (manager_id)
-  REFERENCES manager(id)
+  REFERENCES employee(id)
   ON DELETE SET NULL);
