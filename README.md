@@ -23,6 +23,8 @@
 
 10. When user select update an employee, Then new role and other information will updated in the database.
 
+11. Database is created in schema.sql file and values which are inserted in tables are in seeds.sql, There is also querry.sql where all mysql querries are written.
+
 
 ## Steps I followed:-
 
@@ -40,7 +42,7 @@
 
 7. Write the code and run by using npm start command.
 
-8.  Created  database cms_db in schema and also created tables like department, role, employee and seed that tables with INSERT command.
+8.  Created  database cms_db in schema and also created tables like department, role, employee and seed that tables with INSERT command. SOURCE command is used to run  schema.sql and seeds.sql 
 
 9. After that, added code to GitHub by using "git add -A" command on Gitbash. 
 
@@ -58,8 +60,7 @@
 ## URLs:-
 Here, you can find the walkthrough video for "Employee-Tracker":- 
 
-
-
+https://drive.google.com/file/d/1a_d--3g0zastzSb1Wbx0SJo0jrUKGMS5/view
 
 
 Here, you can find the GitHub URL:-

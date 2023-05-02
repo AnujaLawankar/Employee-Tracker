@@ -19,7 +19,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
+// connection with database
 const db = mysql.createConnection(
     {
         host: "localhost",
@@ -35,7 +35,10 @@ db.connect(err => {
     if (err) {
         throw err;
     } else {
-        console.log("Wellcome to Employee-Tracker");
+
+        console.log('  +----+-------------+------------+---------------------------+----------+---------------------------+-------------+');
+        console.log(" ******************************** Wellcome to Employee-Tracker ********************************");
+        console.log('  +----+-------------+------------+---------------------------+----------+---------------------------+-------------+');
 
 
     }
@@ -63,9 +66,6 @@ const tracker = () => {
             switch (response.question1) {
                 case "View all department": viewdepartment();
                     break;
-
-
-
 
                 case "View all roles": viewroles();
                     break;
@@ -170,14 +170,14 @@ const addDepartment = () => {
 
 };
 
-//add a role:- enter name,sal,dep name that role should add in db.
+//add a role:- enter title,sal,dep name that role should add in db.
 
 
 const addRole = async () => {
 
     const [department] = await db.promise().query(`SELECT * FROM department`);
     const departmentChoices = department.map((role) => {
-        return { name: role.title, value: role.id }
+        return { name: role.dep_name, value: role.id }
     });
     inquirer.prompt([
         {
@@ -221,7 +221,7 @@ const addRole = async () => {
 
 
 
-// add a emp:- enter emp fisrt last name,role manager should add in db.
+// add a emp:- enter emp fisrt, last name,role,manager all added in db.
 
 
 const addEmployee = async () => {
@@ -279,7 +279,7 @@ const addEmployee = async () => {
 
 };
 
-//UPDATEquery:-emprole:- propmt select emp:-update role,info in db
+//UPDATEquery:-emprole will update role,info in db
 const updateemprole = async () => {
     try {
         const [roles] = await db.promise().query(`SELECT * FROM role`);
@@ -323,7 +323,7 @@ const updateemprole = async () => {
     } catch (err) {
         console.error(err);
     }
-    //  tracker();
+
 };
 
 
