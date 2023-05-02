@@ -3,7 +3,7 @@
 
 ## Description:-
 
-1. Employee-Tracker is used to manage and keep track on employee information for particular busniess database. which is called content management systems (CMS).
+1. Employee-Tracker is used to manage and keep track on employee information for particular business database. which is called content management systems (CMS).
 
 2. This is a command line application. Where questions answers prompts are used to display data from database.
 
@@ -11,9 +11,9 @@
 
 4. When user select to view all departments, Then all data from department table will be displayed in formed of table.
 
-5. When user select to view all roles, Then all data from department table will be displayed in formed of table.
+5. When user select to view all roles, Then all data from role table will be displayed in formed of table.
 
-6. When user select to view all employee, Then all data from department table will be displayed in formed of table.
+6. When user select to view all employee, Then all data from employee table will be displayed in formed of table.
 
 7. When user select to add a department, Then data is added in the department table and displayed in formed of table.
 
